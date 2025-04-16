@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html  dir="rtl">
   <!--begin::Head-->
@@ -50,6 +49,7 @@
             </li>
             <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">Home</a></li>
             <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">Contact</a></li>
+            <li class="nav-item d-none d-md-block"><a href="{{route('productForm.create')}}" class="nav-link">مدیریت تنظیم اسناد</a></li>
           </ul>
           <!--end::Start Navbar Links-->
           <!--begin::End Navbar Links-->
@@ -240,6 +240,7 @@
             <!--begin::Row-->
             <div class="row">
               @yield('content')
+              {{-- {{$slot}} --}}
             </div>
             <!--end::Row-->
           </div>
