@@ -4,6 +4,8 @@
   <!--begin::Head-->
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="https://use.typekit.net/xyz123.css">
+
     <title>@yield('title', 'شرکت امارتی استراس')</title>
     <!--begin::Primary Meta Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,6 +34,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="{{ asset('css/adminlte/adminlte.rtl.css') }}" />
+    <style>
+    body {
+        font-family: 'Myriad Pro', sans-serif;
+    }
+    </style>
+
   </head>
   <!--begin::Body-->
   <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
