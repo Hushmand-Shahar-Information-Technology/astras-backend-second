@@ -39,7 +39,7 @@
                 </button>
             </div>
             <div class="table-responsive">
-                <h1 class="text-center mb-4" style=" font-weight: bold; font-size: 24px;">فورم ثبت واګون های وارداتی مواد نفتی</h1>
+                <h1 class="text-center mb-4" style=" font-weight: bold; font-size: 24px;">فورم ثبت واګون های  خشکه باب صادراتی آمریت استیشن خط آهن</h1>
             </div>
 
             <div class="container bg-white p-4 rounded shadow-sm">
@@ -61,27 +61,21 @@
         <table class="custom-table table table-bordered table-hover text-center align-middle" id="dataTable">
             <thead class="table-light tb-header">
                 <tr>
-                <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="شماره: activate to sort column descending">شماره</th>
+                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="شماره: activate to sort column descending">شماره</th>
 
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="نمبر پردادکه: activate to sort column ascending">نمبر پردادکه</th>
-
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="نمبر واګږن: activate to sort column ascending">نمبر نمبر واګون</th>
+                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="نمبر پردادکه: activate to sort column ascending">نمبر واګون</th>
 
                     <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="وزن: activate to sort column ascending">وزن</th>
 
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="اسم شرکت: activate to sort column ascending">اسم شرکت</th>
+                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="نمبر برنامه: activate to sort column ascending">نمبر برنامه</th>
 
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="نوع جنس: activate to sort column ascending">نوع جنس</th>
+                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="اسم شزکت: activate to sort column ascending">اسم شرکت</th>
 
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="کشور میدآ: activate to sort column ascending">کشور میدآ</th>
+                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="اسم جنس: activate to sort column ascending">اسم چنس</th>
 
                     <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="کشور مقصد: activate to sort column ascending">کشور مقصد</th>
 
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="موقیعت واګون: activate to sort column ascending">موقیعت واګون</th>
-
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="تاریخ ورود: activate to sort column ascending">تاریخ ورود</th>
-
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="تاریخ خروج: activate to sort column ascending">تاریخ خروج</th>
+                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="تاریخ رفت activate to sort column ascending">تاریخ رفت</th>
 
                     <th class="sorting headntr" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="action: activate to sort column ascending">ACTIONS</th>
                 </tr>
@@ -89,16 +83,13 @@
             <tbody>
                     <tr>
                         <td>1</td>
-                        <td>12345</td>
-                        <td>68000</td>
+                        <td>7875</td>
                         <td>50kg</td>
-                        <td>شرکت ABC</td>
-                        <td>محصول 1</td>
+                        <td>512</td>
+                        <td>شرکت Khan</td>
+                        <td>پیاز</td>
                         <td>ایران</td>
-                        <td>افغانستان</td>
-                        <td>واګون 1</td>
-                        <td>2025-01-01</td>
-                        <td>2025-01-15</td>
+                        <td>2025-04-15</td>
                         <td class=" headntr">
                             <div class="dropdown">
                                 <button class="btn btn-sm btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown">Act</button>
@@ -112,16 +103,13 @@
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>12345</td>
-                        <td>68000</td>
+                        <td>7875</td>
                         <td>50kg</td>
-                        <td>شرکت ABC</td>
-                        <td>محصول 1</td>
+                        <td>512</td>
+                        <td>شرکت Khan</td>
+                        <td>پیاز</td>
                         <td>ایران</td>
-                        <td>افغانستان</td>
-                        <td>واګون 1</td>
-                        <td>2025-01-01</td>
-                        <td>2025-01-15</td>
+                        <td>2025-04-15</td>
                         <td class=" headntr">
                             <div class="dropdown">
                                 <button class="btn btn-sm btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown">Act</button>
@@ -135,16 +123,13 @@
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>12345</td>
-                        <td>68000</td>
+                        <td>7875</td>
                         <td>50kg</td>
-                        <td>شرکت ABC</td>
-                        <td>محصول 1</td>
+                        <td>512</td>
+                        <td>شرکت Khan</td>
+                        <td>پیاز</td>
                         <td>ایران</td>
-                        <td>افغانستان</td>
-                        <td>واګون 1</td>
-                        <td>2025-01-01</td>
-                        <td>2025-01-15</td>
+                        <td>2025-04-15</td>
                         <td class=" headntr">
                             <div class="dropdown">
                                 <button class="btn btn-sm btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown">Act</button>
@@ -165,12 +150,6 @@
         </div>
 
 </div>
-
 @endsection
-
 <script src={{asset('js/print.js')}}></script>
-
-
-
-
 

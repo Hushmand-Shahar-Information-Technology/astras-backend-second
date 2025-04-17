@@ -33,6 +33,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="{{ asset('css/adminlte/adminlte.rtl.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/tableStyle.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <style>
       *{
         margin: 0px; 
@@ -312,6 +316,7 @@
     </script>
     <!--end::OverlayScrollbars Configure-->
     <!--end::Script-->
+    @stack('scripts')
   </body>
   <!--end::Body-->
 </html>
