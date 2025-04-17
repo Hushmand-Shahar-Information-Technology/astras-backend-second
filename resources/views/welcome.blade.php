@@ -1,1 +1,5 @@
-@include('layout.layout')
+@extends('layout.layout')
+
+@section('content')       
+  
+@endsection
