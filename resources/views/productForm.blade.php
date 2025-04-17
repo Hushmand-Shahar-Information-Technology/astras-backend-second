@@ -2,30 +2,6 @@
 @extends('layout.layout')
 
 @section('content')
-<script>
-  // Function to handle the Enter key behavior
-  document.addEventListener('DOMContentLoaded', function() {
-    const inputs = document.querySelectorAll('input, textarea'); // Select input and textarea elements
-    const submitButton = document.querySelector('button[type="submit"]'); // Submit button
-
-    inputs.forEach((input, index) => {
-      input.addEventListener('keydown', function(event) {
-        if (event.key === 'Enter') {
-          // Prevent the default form submission
-          event.preventDefault();
-
-          // If it's the last input, submit the form
-          if (index === inputs.length - 1) {
-            submitButton.click();
-          } else {
-            // Otherwise, move to the next input field
-            inputs[index + 1].focus();
-          }
-        }
-      });
-    });
-  });
-</script>
 
 <div class="card-header bg-primary container-fluid d-flex justify-content-center rounded-top-2">
     <div class="card-title text-white" style="text-align: center">مدیریت تنظیم اسناد</div>
@@ -212,4 +188,28 @@
     <!--end::Form-->
   </div>
 
+  <script>
+    // Function to handle the Enter key behavior
+    document.addEventListener('DOMContentLoaded', function() {
+      const inputs = document.querySelectorAll('input, textarea'); // Select input and textarea elements
+      const submitButton = document.querySelector('button[type="submit"]'); // Submit button
+  
+      inputs.forEach((input, index) => {
+        input.addEventListener('keydown', function(event) {
+          if (event.key === 'Enter') {
+            // Prevent the default form submission
+            event.preventDefault();
+  
+            // If it's the last input, submit the form
+            if (index === inputs.length - 1) {
+              submitButton.click();
+            } else {
+              // Otherwise, move to the next input field
+              inputs[index + 1].focus();
+            }
+          }
+        });
+      });
+    });
+  </script> 
   @endsection

@@ -38,6 +38,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <style>
+      *{
+        margin: 0px; 
+        padding: 0px; 
+      }
     body {
         font-family: 'Myriad Pro', sans-serif;
     }
