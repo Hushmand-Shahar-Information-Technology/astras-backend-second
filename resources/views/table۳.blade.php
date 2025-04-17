@@ -22,7 +22,7 @@
 
                     <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="تاریخ رفت activate to sort column ascending">تاریخ رفت</th>
                 </tr>
-            </thead>
+                <h1>khfkjdshfkhf</h1>            </thead>
             <tbody>
                 <tr>
                     <td>1</td>
