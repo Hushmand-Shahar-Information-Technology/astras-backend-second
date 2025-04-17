@@ -67,17 +67,27 @@
     <table class="table table-bordered table-hover text-center align-middle" >
       <thead class="table-light">
         <tr>
-            <th>S/N#</th>
-            <th>Product Name</th>
-            <th>Size (LXWXH)</th>
-            <th>Total (L & W)</th>
-            <th>Color</th>
-            <th>TYPE</th>
-            <th>PLAN QTY</th>
-            <th>MACHINE</th>
-            <th>STATUS</th>
-            <th>IMAGE</th>
-            <th>ACTIONS</th>
+            <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="S/N#: activate to sort column descending">S/N#</th>
+
+            <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Product Name: activate to sort column ascending">Product Name</th>
+
+            <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="size: activate to sort column ascending">size (LXWHX)</th>
+
+            <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="total L & W: activate to sort column ascending">Total L & W</th>
+
+            <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="color: activate to sort column ascending">Color</th>
+
+            <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="type: activate to sort column ascending">Type</th>
+
+            <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="plan qty: activate to sort column ascending">Plan QTY</th>
+
+            <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="machine: activate to sort column ascending">MACHINE</th>
+
+            <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="status: activate to sort column ascending">STATUS</th>
+
+            <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="image: activate to sort column ascending">IMAGE</th>
+
+            <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="action: activate to sort column ascending">ACTIONS</th>
         </tr>
       </thead>
       <tbody>
