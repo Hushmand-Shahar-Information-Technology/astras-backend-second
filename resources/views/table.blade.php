@@ -1,28 +1,43 @@
 @extends('layout.layout')
 
 @section('content')
+    <div class="container bg-white p-4 rounded shadow-sm">
+    <h3 class="text-center my-4">فورم ثبت واګون های وارداتی مواد خشکه باب</h3>
+  <!-- Filter Buttons -->
+  <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+    <div class="d-flex flex-wrap gap-2">
+      <button class="btn btn-outline-primary filter-btn"><i class="bi bi-list-ul"></i> تمام</button>
+      <button class="btn btn-outline-danger filter-btn"><i class="bi bi-x-circle"></i> توقف شدن</button>
+      <button class="btn btn-outline-success filter-btn"><i class="bi bi-play-circle"></i> درحال تولید</button>
+      <button class="btn btn-outline-info filter-btn"><i class="bi bi-funnel"></i> Filter Records</button>
+    </div>
+    <input type="text" class="form-control w-auto mt-2 mt-md-0" placeholder="🔍 Live Search">
+  </div>
 
-    <div class="container mt-4">
-        <h3 class="text-center mb-4">فورم ثبت واګون های وارداتی خشکه باب</h3>
-        <table class="table table-bordered table-striped table-sm table-smaller">
-            <thead>
-                <tr>
-                    <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="شماره: activate to sort column descending">شماره</th>
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="نمبر پردادکه: activate to sort column ascending">نمبر پردادکه</th>
+  <!-- Responsive Table -->
+  <div class="table-responsive" style="overflow-x: auto; overflow-y: auto;" >
 
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="نمبر واګون: activate to sort column ascending">نمبر واګون</th>
+    <table class="table table-bordered table-hover text-center align-middle" >
+        <thead class="table-light">
+            <tr>
+                <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="شماره: activate to sort column descending">شماره</th>
+                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="نمبر پردادکه: activate to sort column ascending">نمبر پردادکه</th>
 
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="وزن: activate to sort column ascending">وزن</th>
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="اسم شرکت: activate to sort column ascending">اسم شرکت</th>
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="نوع جنس: activate to sort column ascending">نوع جنس</th>
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="کشور میدآ: activate to sort column ascending">کشور میدآ</th>
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="کشور مقصد: activate to sort column ascending">کشور مقصد</th>
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="موقیعت واګون: activate to sort column ascending">موقیعت واګون</th>
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="تاریخ ورود: activate to sort column ascending">تاریخ ورود</th>
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="تاریخ خروج: activate to sort column ascending">تاریخ خروج</th>
-                </tr>
-            </thead>
-            <tbody>
+                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="نمبر واګون: activate to sort column ascending">نمبر واګون</th>
+
+                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="وزن: activate to sort column ascending">وزن</th>
+                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="اسم شرکت: activate to sort column ascending">اسم شرکت</th>
+                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="نوع جنس: activate to sort column ascending">نوع جنس</th>
+                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="کشور میدآ: activate to sort column ascending">کشور میدآ</th>
+                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="کشور مقصد: activate to sort column ascending">کشور مقصد</th>
+                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="موقیعت واګون: activate to sort column ascending">موقیعت واګون</th>
+                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="تاریخ ورود: activate to sort column ascending">تاریخ ورود</th>
+                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="تاریخ خروج: activate to sort column ascending">تاریخ خروج</th>
+
+                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="action: activate to sort column ascending">ACTIONS</th>
+            </tr>
+        </thead>
+        <tbody>
                 <tr>
                     <td>1</td>
                     <td>12345</td>
@@ -35,9 +50,19 @@
                     <td>واګون 1</td>
                     <td>2025-01-01</td>
                     <td>2025-01-15</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown">Act</button>
+                            <ul class="dropdown-menu dropdown-li">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td>2</td>
+                    <td>4</td>
                     <td>67890</td>
                     <td>6703</td>
                     <td>60kg</td>
@@ -47,13 +72,42 @@
                     <td>هند</td>
                     <td>واګون 2</td>
                     <td>2025-02-01</td>
-                    <td>2025-02-10</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown">Act</button>
+                            <ul class="dropdown-menu dropdown-li">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>78</td>
+                    <td>67890</td>
+                    <td>6703</td>
+                    <td>60kg</td>
+                    <td>شرکت XYZ</td>
+                    <td>محصول 2</td>
+                    <td>پاکستان</td>
+                    <td>هند</td>
+                    <td>واګون 2</td>
+                    <td>2025-02-01</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown">Act</button>
+                            <ul class="dropdown-menu dropdown-li">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
                 </tr>
             </tbody>
-        </table>
-    </div>
-
-
+    </table>
+  </div>
+</div>
 
 @endsection
 
@@ -84,12 +138,6 @@
 
 
 
-<!-- 
-<x-filament-panels::page>
-    <link rel="stylesheet" href="{{@asset('css/style.css')}}">
-
-    <x-filament::section>
-        <!-- Print-only header -->
         <div class="print-header">
             <div class="" style="display:flex; flex-direction:row">
                 <div class="logo align-self-end" style="display:flex; justify-content:flex-end; align-items:flex-end;">
@@ -120,7 +168,7 @@
                 <div class="search-box">
                     <form wire:submit.prevent="$refresh" class="w-full">
                         <input type="text" wire:model.live.debounce.500ms="search" class="search-input"
-                            placeholder="جستجو..." value="{{ $search }}">
+                            placeholder="جستجو..." >
                     </form>
                 </div>
                 <button onclick="printTable()" class="print-button">
@@ -144,31 +192,30 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach($records as $index => $record)
+
                             <tr>
                                 <td class="px-4 py-2 border">
-                                    {{ $index + 1 + ($records->currentPage() - 1) * $records->perPage() }}
+
                                 </td>
-                                <td class="px-4 py-2 border">{{ $record->number_of_wagon  }}</td>
-                                <td class="px-4 py-2 border">{{ $record->weight }}</td>
-                                <td class="px-4 py-2 border">{{ $record->number_of_bar }}</td>
-                                <td class="px-4 py-2 border">{{ $record->company?->name }}</td>
-                                <td class="px-4 py-2 border">{{ $record->product?->name }}</td>
-                                <td class="px-4 py-2 border">{{ $record->toCountry?->name }}</td>
+                                <td class="px-4 py-2 border"></td>
+                                <td class="px-4 py-2 border"></td>
+                                <td class="px-4 py-2 border"></td>
+                                <td class="px-4 py-2 border"></td>
+                                <td class="px-4 py-2 border"></td>
+                                <td class="px-4 py-2 border"></td>
                                 <td class="px-4 py-2 border">
-                                    {{ \Morilog\Jalali\Jalalian::fromDateTime($record->date_of_out)->format('Y/m/d') }}
+
                                 </td>
                             </tr>
-                        @endforeach
+
                     </tbody>
                 </table>
             </div>
 
             <div class="pagination-container">
-                {{ $records->links() }}
+
             </div>
         </div>
-    </x-filament::section>
 
     <!-- let's include jQuery and shared scripts -->
     <script src="{{ asset('js/jquery.js') }}"></script>
@@ -273,4 +320,3 @@
             }, 500);
         }
 </script>
-</x-filament-panels::page> -->

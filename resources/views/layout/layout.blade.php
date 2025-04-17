@@ -33,6 +33,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="{{ asset('css/adminlte/adminlte.rtl.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/tableStyle.css') }}">
+
     <style>
     body {
         font-family: 'Myriad Pro', sans-serif;
@@ -308,6 +310,7 @@
     </script>
     <!--end::OverlayScrollbars Configure-->
     <!--end::Script-->
+    @stack('scripts')
   </body>
   <!--end::Body-->
 </html>
