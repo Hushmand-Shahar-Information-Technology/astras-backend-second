@@ -16,3 +16,4 @@ Route::view('/train-station/import/oil','table2');
 Route::view('/train-station/export/dry','table3');
 Route::view('//train-station/export/oil','exportOilTable');
 Route::view('table4','table4');
+Route::view('tableTask','tableTasks');
