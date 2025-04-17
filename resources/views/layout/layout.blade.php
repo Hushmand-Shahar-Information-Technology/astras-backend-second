@@ -34,6 +34,10 @@
     />
     <link rel="stylesheet" href="{{ asset('css/adminlte/adminlte.rtl.css') }}" />
     <style>
+      *{
+        margin: 0px; 
+        padding: 0px; 
+      }
     body {
         font-family: 'Myriad Pro', sans-serif;
     }

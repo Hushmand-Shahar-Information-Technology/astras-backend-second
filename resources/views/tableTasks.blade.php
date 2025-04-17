@@ -1,254 +1,148 @@
 @extends('layout.layout')
 
-@section('content')
+@section('content') <style>
+    table, td {  
+    border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      border-left: none !important;
+      border-right: none !important;
+      text-align: center;
+      vertical-align: middle;
+    }
 
+    /* Keep right-most column text on one line */
+    td:last-child {
+      white-space: nowrap;
+    }
 
-<div class="container mt-4">
-    <h3 class="text-center mb-4">فورم ثبت واګون های وارداتی مواد نفتی</h3>
-    <table class="table table-bordered table-striped table-sm table-smaller">
-        <thead>
-            <tr>
-                <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="شماره: activate to sort column descending">شماره</th>
+    td:first-child {
+      border-right: 1px solid black !important;
+      border-left: 1px solid black !important;
+    }
 
-                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="نمبر پردادکه: activate to sort column ascending">نمبر پردادکه</th>
+    td:last-child {
+      border-left: 1px solid black !important;
+    }
 
-                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="وزن: activate to sort column ascending">وزن</th>
-
-                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="اسم شرکت: activate to sort column ascending">اسم شرکت</th>
-
-                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="نوع جنس: activate to sort column ascending">نوع جنس</th>
-
-                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="کشور میدآ: activate to sort column ascending">کشور میدآ</th>
-
-                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="کشور مقصد: activate to sort column ascending">کشور مقصد</th>
-
-                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="موقیعت واګون: activate to sort column ascending">موقیعت واګون</th>
-
-                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="تاریخ ورود: activate to sort column ascending">تاریخ ورود</th>
-
-                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="تاریخ خروج: activate to sort column ascending">تاریخ خروج</th>
-            </tr>
-        </thead>
+    .form-title {
+      text-align: center;
+      font-weight: bold;
+      margin: 1rem 0;
+    }
+    p {
+        margin: 0 !important ; 
+        padding: 0 !important; 
+    }
+  </style>
+<div class="container mt-4 ">
+    <div class="d-flex justify-content-between align-items-end">
+        <div>
+            <div>
+                <img src="{{asset('images/gov-logo.png')}}" style="width: 80px; height: 80px;     transform: translate(-35px, -15px);" alt="">
+            </div>
+        </div>
+        <div class="text-center"> 
+            <p>وزارت مالیه </p>
+            <p>ریاست عمومی شرکت های دولتی</p>
+            <p>ریاست شرکت دولتی استراس</p>
+            <p>امریت مالی</p>
+            <p>مدیریت عمومی عواید</p>
+        </div>
+        <div>
+            <img style="width: 90px; height: 90px; transform: translate(35px, -15px);" src="{{asset('images/astras.png')}}" alt="" >
+        </div>
+    </div>
+    <div class="d-flex justify-content-between align-items-end" style="font-size: 1rem">
+        <div class="">
+            <p>ع</p>
+        </div>
+        <div style="transform: translateX(-63px);">
+            تکت فیص توقف وسایط داخلی باردار و خالی در پورتها
+        </div>
+        <div class="" style="display:flex; flex-direction: column; justify-content:end">
+            <p class="text-center">پارچه اول</p>
+            <p>قیمت تکت روزانه (۳۵۰) افغانی</p>
+        </div>
+    </div>
+    <div class="table-responsive">
+      <table class="table align-middle">
         <tbody>
-            <tr>
-                <td>1</td>
-                <td>12345</td>
-                <td>50kg</td>
-                <td>شرکت ABC</td>
-                <td>محصول 1</td>
-                <td>ایران</td>
-                <td>افغانستان</td>
-                <td>واګون 1</td>
-                <td>2025-01-01</td>
-                <td>2025-01-15</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>67890</td>
-                <td>60kg</td>
-                <td>شرکت XYZ</td>
-                <td>محصول 2</td>
-                <td>پاکستان</td>
-                <td>هند</td>
-                <td>واګون 2</td>
-                <td>2025-02-01</td>
-                <td>2025-02-10</td>
-            </tr>
+          <tr>
+            <td style="width: 10rem">شماره</td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+              <td>اسم شرکت</td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+              <td>اسم راننده</td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+              <td>نمبر موتر</td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+              <td>نوع جنس</td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+              <td>خالی</td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+              <td>تاریخ و ساعت دخول</td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+              <td>تاریخ و ساعت خروج</td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+              <td>مدت توقف</td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td>مبلغ فی عراده فی روز</td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td>مجموع مبلغ</td>
+            <td></td><td></td><td></td><td></td>
+            <td style="position: relative;">
+                <div style="width: 15rem; height: 10.2rem; background-color: white; padding: 1rem 2rem; position: absolute; bottom: 0; left: 0; border-top: 1px solid black !important; border-right: 1px solid black !important;">
+                    <div>
+                      <p>مبلغ: (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) افغانی</p>
+                        اخذ شد
+                    </div>
+                    <div>
+                      <p>امضاء مامور موظف:</p>
+                      <p>............</p>
+                    </div>
+                </div>
+            </td>
+          </tr>
         </tbody>
-    </table>
+      </table>
+    </div>
+  </div>
+{{-- 
+    <div class="signature-box border-top border-dark row mt-4">
+<div class="col-md-6">
+  <p>مبلغ: ("     ") افغانی</p>
+  <p>اخذ شد.</p>
 </div>
+<div class="col-md-6 text-end">
+  <p>امضاء مامور موظف:</p>
+  <p>............</p>
+</div> 
+--}}
 
+{{--     
+    </div>
+  </div> --}}
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 @endsection
-
-{{-- 
-<!-- 
-<x-filament-panels::page>
-    <link rel="stylesheet" href="{{@asset('css/style.css')}}">
-
-    <x-filament::section>
-        <!-- Print-only header -->
-        <div class="print-header">
-            <div class="" style="display:flex; flex-direction:row">
-                <div class="logo align-self-end" style="display:flex; justify-content:flex-end; align-items:flex-end;">
-                    <img src="{{ asset('images/logo.png') }}" alt="Logo"
-                        style="height: 90px; width: 90px; align-self: flex-end;">
-                </div>
-                <div class="text-center header-wrapper" style="flex-grow: 1;">
-                    <div class="header-title" style="font-size: 1.1rem; font-weight: bold; margin-bottom: 0.1rem;">
-                        د امارتی شرکتونو لوی ریاست</div>
-                    <div class="header-subtitle" style="font-size: 1.1rem; font-weight: bold; margin-bottom: 0.1rem;">
-                        ریاست اجرائیوی شرکت امارتی استراس</div>
-                    <div class="header-subtitle" style="font-size: 1.1rem; font-weight: bold; margin-bottom: 0.1rem;">
-                        آمریت خط استیشن</div>
-                    <div class="header-subtitle" style="font-size: 1.1rem; font-weight: bold; margin-bottom: 0.1rem;">
-                        فورم ثبت واگون های صادراتی خشکه باب </div>
-                </div>
-                <div class="gov-logo align-self-end"
-                    style="display:flex; justify-content:flex-end; align-items:flex-end;">
-                    <img src="{{ asset('images/gov-logo.png') }}" alt="Government Logo"
-                        style="height: 80px; width: 80px;margin-top:auto">
-                </div>
-            </div>
-        </div>
-
-        <div class="custom-table-container">
-            <!-- Search and Print Controls -->
-            <div class="controls-container">
-                <div class="search-box">
-                    <form wire:submit.prevent="$refresh" class="w-full">
-                        <input type="text" wire:model.live.debounce.500ms="search" class="search-input"
-                            placeholder="جستجو..." value="{{ $search }}">
-                    </form>
-                </div>
-                <button onclick="printTable()" class="print-button">
-                    <i class="fi fi-rr-print"></i> چاپ
-                </button>
-            </div>
-            <div class="table-responsive">
-                <h1 class="text-center mb-4" style=" font-weight: bold; font-size: 24px;">فورم ثبت واگون های صادراتی
-                    خشکه باب</h1>
-                <table class="custom-table table table-bordered" id="dataTable">
-                    <thead>
-                        <tr>
-                            <th class="px-4 py-2 border">#</th>
-                            <th class="px-4 py-2 border">نمبر واگون</th>
-                            <th class="px-4 py-2 border">وزن (تن)</th>
-                            <th class="px-4 py-2 border">نمبر بار نامه</th>
-                            <th class="px-4 py-2 border">اسم شرکت</th>
-                            <th class="px-4 py-2 border">اسم جنس</th>
-                            <th class="px-4 py-2 border">کشور مقصد</th>
-                            <th class="px-4 py-2 border">تاریخ رفت</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach($records as $index => $record)
-                            <tr>
-                                <td class="px-4 py-2 border">
-                                    {{ $index + 1 + ($records->currentPage() - 1) * $records->perPage() }}
-                                </td>
-                                <td class="px-4 py-2 border">{{ $record->number_of_wagon  }}</td>
-                                <td class="px-4 py-2 border">{{ $record->weight }}</td>
-                                <td class="px-4 py-2 border">{{ $record->number_of_bar }}</td>
-                                <td class="px-4 py-2 border">{{ $record->company?->name }}</td>
-                                <td class="px-4 py-2 border">{{ $record->product?->name }}</td>
-                                <td class="px-4 py-2 border">{{ $record->toCountry?->name }}</td>
-                                <td class="px-4 py-2 border">
-                                    {{ \Morilog\Jalali\Jalalian::fromDateTime($record->date_of_out)->format('Y/m/d') }}
-                                </td>
-                            </tr>
-                        @endforeach
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="pagination-container">
-                {{ $records->links() }}
-            </div>
-        </div>
-    </x-filament::section>
-
-    <!-- let's include jQuery and shared scripts -->
-    <script src="{{ asset('js/jquery.js') }}"></script>
-    <script>
-    // Print functionality
-        function printTable() {
-            // Create a clean container for printing
-            var printContainer = $("<div>").addClass("print-container").css({
-                "position": "fixed",
-                "left": "-9999px"
-            });
-
-            // Clone header and make it visible
-            var headerClone = $(".print-header").clone().css("display", "block");
-
-            // Fix image URLs to absolute paths
-            headerClone.find("img").each(function () {
-                var img = $(this);
-                var imgSrc = img.attr("src");
-
-                // Make sure all image paths are absolute
-                if (imgSrc) {
-                    // If it's a relative path starting with /storage or /images
-                    if (imgSrc.startsWith('/storage/') || imgSrc.startsWith('/images/')) {
-                        img.attr("src", window.location.origin + imgSrc);
-                    }
-                    // If it's a path without a leading slash
-                    else if (!imgSrc.startsWith('http') && !imgSrc.startsWith('/')) {
-                        img.attr("src", window.location.origin + '/' + imgSrc);
-                    }
-                    // If it has localhost or 127.0.0.1 in the URL
-                    else if (imgSrc.indexOf('127.0.0.1') >= 0 || imgSrc.indexOf('localhost') >= 0) {
-                        // Extract the path after the domain
-                        var pathParts = imgSrc.split(/localhost:\d+|127\.0\.0\.1:\d+/);
-                        if (pathParts.length > 1) {
-                            img.attr("src", window.location.origin + pathParts[1]);
-                        }
-                    }
-                }
-
-                // Add error handler for images
-                img.on('error', function () {
-                    console.log('Image failed to load: ' + img.attr('src'));
-                });
-            });
-
-            // Clone the table
-            var tableClone = $(".custom-table").clone();
-
-            // Add elements to print container
-            printContainer.append(headerClone);
-            printContainer.append(tableClone);
-
-            // Add to document for printing
-            $("body").append(printContainer);
-
-            // Add print style
-            var $printStyle = $("<style>").text(`
-        @media print {
-            * { visibility: hidden !important; }
-            .print-container, .print-container * { visibility: visible !important; }
-            .print-container {
-                position: absolute !important;
-                left: 0 !important;
-                top: 0 !important;
-                width: 100% !important;
-                background: white !important;
-            }
-            .print-container .print-header {
-                display: block !important;
-                margin-bottom: 20px !important;
-            }
-            .print-container .print-header img {
-                display: inline-block !important;
-                visibility: visible !important;
-            }
-            .print-container table {
-                width: 100% !important;
-                border-collapse: collapse !important;
-                direction: rtl !important;
-            }
-            .print-container table th, .print-container table td {
-                border: 1px solid black !important;
-                padding: 8px !important;
-                text-align: right !important;
-            }
-        }
-    `);
-
-            $("head").append($printStyle);
-
-            // Use a timeout to ensure everything has rendered before printing
-            setTimeout(function () {
-                // Try direct window.print() approach
-                window.print();
-
-                // Remove temporary elements after printing
-                setTimeout(function () {
-                    printContainer.remove();
-                    $printStyle.remove();
-                }, 1000);
-            }, 500);
-        }
-</script>
-</x-filament-panels::page> --> --}}
