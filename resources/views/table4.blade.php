@@ -24,22 +24,25 @@
 
     .table th, .table td {
       vertical-align: middle;
-      font-size: 0.95rem;
+      font-size: 0.80rem;
     }
 
     /* Responsive font sizing */
     @media (max-width: 768px) {
       .table th, .table td {
-        font-size: 0.75rem;
+        font-size: 0.50rem;
       }
 
       .filter-btn {
-        font-size: 0.75rem;
+        font-size: 0.70rem;
         padding: 0.25rem 0.5rem;
       }
 
       .form-control, .dropdown-toggle {
-        font-size: 0.75rem;
+        font-size: 0.65rem;
+      }
+      .dropdown-li{
+        font-size: 0.65rem;
       }
     }
   </style>
@@ -60,51 +63,74 @@
   </div>
 
   <!-- Responsive Table -->
-  <div class="table-responsive" style="overflow-x: hidden; overflow-y: hidden;">
-    <table class="table table-bordered table-hover text-center align-middle">
+  <div class="table-responsive" style="overflow-x: auto; overflow-y: auto;" >
+    <table class="table table-bordered table-hover text-center align-middle" >
       <thead class="table-light">
         <tr>
-            <th>ACTIONS</th>
-            <th>IMAGE</th>
-            <th>STATUS</th>
-            <th>MACHINE</th>
-            <th>PLAN QTY</th>
+            <th>S/N#</th>
+            <th>Product Name</th>
+            <th>Size (LXWXH)</th>
+            <th>Total (L & W)</th>
+            <th>Color</th>
             <th>TYPE</th>
+            <th>PLAN QTY</th>
+            <th>MACHINE</th>
+            <th>STATUS</th>
+            <th>IMAGE</th>
+            <th>ACTIONS</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Carton</td>
-          <td>4,000</td>
-          <td><a href="#" class="text-primary text-decoration-underline">Stitching</a></td>
-          <td><i class="bi bi-check-circle status-icon"></i></td>
-          <td><i class="bi bi-image image-icon"></i></td>
-          <td>
+            <td>1</td>
+            <td>Messi pressure cooker</td>
+            <td>250 * 250 * 215</td>
+            <td>500 * 480</td>
+            <td>
             <div class="dropdown">
-              <button class="btn btn-sm btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown">Act</button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Edit</a></li>
-                <li><a class="dropdown-item" href="#">Delete</a></li>
-              </ul>
+                <button class="btn btn-sm btn-outline-primary">سور</button>
             </div>
-          </td>
+            </td>
+            <td>Carton</td>
+            <td>4,000</td>
+            <td><a href="#" class="text-primary text-decoration-underline">Stitching</a></td>
+            <td><i class="bi bi-check-circle status-icon"></i></td>
+            <td><i class="bi bi-image image-icon"></i></td>
+            <td>
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown">Act</button>
+                    <ul class="dropdown-menu dropdown-li">
+                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                </div>
+            </td>
         </tr>
         <!-- More rows as needed -->
         <tr>
+            <td>2</td>
+            <td>Messi pressure cooker</td>
+            <td>250 * 250 * 215</td>
+            <td>500 * 480</td>
             <td>
-              <div class="dropdown">
-                <button class="btn btn-sm btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown">Act</button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Edit</a></li>
-                  <li><a class="dropdown-item" href="#">Delete</a></li>
-                </ul>
-              </div>
+            <div class="dropdown">
+                <button class="btn btn-sm btn-outline-primary">سور</button>
+            </div>
             </td>
-            <td><i class="bi bi-image image-icon"></i></td>
-            <td><i class="bi bi-check-circle status-icon"></i></td>
-            <td><a href="#" class="text-primary text-decoration-underline">Stitching</a></td>
-            <td>4,000</td>
             <td>Carton</td>
+            <td>4,0890</td>
+            <td><a href="#" class="text-primary text-decoration-underline">Stitching</a></td>
+            <td><i class="bi bi-check-circle status-icon"></i></td>
+            <td><i class="bi bi-image image-icon"></i></td>
+            <td>
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown">Act</button>
+                    <ul class="dropdown-menu dropdown-li">
+                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                </div>
+            </td>
         </tr>
       </tbody>
     </table>
