@@ -5,7 +5,6 @@
 
 
 <div class="container bg-white p-4 rounded shadow-sm">
-
   <!-- Filter Buttons -->
   <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
     <div class="d-flex flex-wrap gap-2">
