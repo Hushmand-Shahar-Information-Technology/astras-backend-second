@@ -53,5 +53,5 @@
         </div>
         </div>
     </div>
-    <input type="text" class="form-control w-auto mt-2 mt-md-0" placeholder="🔍 Live Search">
+    <input type="text" class="form-control w-auto mt-2 mt-md-0" style="text-align: right" placeholder=" جستجو🔍">
   </div>

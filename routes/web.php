@@ -29,4 +29,8 @@ Route::view('/dispatcher-table-6','dispatcher-forms/dispatcher-table-6');
 Route::view('/company-form','company-form/company-form');
 Route::view('/company-table','company-form/company-table');
 Route::view('/dispatcher','dispatcher-form-1');
+
 Route::view('/port1/warehouse','Port1Delivery.importedProperty');
+Route::view('table2','Port1Delivery.transitPropertyBill2');
+Route::view('table3','Port1Delivery.importedPropertyByBill');
+Route::view('exporttable','Port1Delivery.exportPropertyTable');

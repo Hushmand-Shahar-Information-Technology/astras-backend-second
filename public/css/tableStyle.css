@@ -24,6 +24,9 @@ body {
 .hidden {
     display: none;
     }
+.write{
+    writing-mode: vertical-rl;
+}
 
 .box{
     padding: 1rem;

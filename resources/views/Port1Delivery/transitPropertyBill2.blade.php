@@ -28,7 +28,7 @@
         <div class="custom-table-container">
             <!-- Search and Print Controls -->
             <div class="table-responsive">
-                <h1 class="text-center mb-4" style=" font-weight: bold; font-size: 24px;">فورم ثبت واګون های وارداتی مواد نفتی</h1>
+                <h1 class="text-center mb-4" style=" font-weight: bold; font-size: 24px;">اموال وارداتی ترانزیتی از طریق بل</h1>
             </div>
 
             <div class="container bg-white p-4 rounded shadow-sm">
@@ -49,24 +49,23 @@
 
                     <th class="sorting" tabindex="0" aria-controls="example1" rowspan="2" colspan="1" aria-label="نوع جنس: activate to sort column ascending">نوع جنس</th>
 
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="2" colspan="1" aria-label="لنګر: activate to sort column ascending">لنګر</th>
-
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="2" colspan="1" aria-label="واګون: activate to sort column ascending">واګږن</th>
-
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="2" colspan="1" aria-label="کانټینر: activate to sort column ascending">کانټینر</th>
+                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="2" aria-label="تعداد وسایط: activate to sort column ascending">تعداد وسایط</th>
 
                     <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="2" aria-label="تخلیه: activate to sort column ascending">تخلیه
                     </th>
 
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="2" colspan="1" aria-label="عراده: activate to sort column ascending">عراده</th>
-
                     <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="2" aria-label="موقیعت واګون: activate to sort column ascending">بارکیری</th>
+
 
                     <th class="sorting" tabindex="0" aria-controls="example1" rowspan="2" colspan="1" aria-label="تاریخ: activate to sort column ascending">تاریخ </th>
 
                     <th class="sorting headntr" tabindex="0" aria-controls="example1" rowspan="2" colspan="1" aria-label="ملاحضات: activate to sort column ascending">ملاحضات</th>
                 </tr>
                 <tr>
+                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="تعداد: activate to sort column ascending">تعداد</th>
+
+                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="عراده: activate to sort column ascending">عراده</th>
+
                     <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="کیلو: activate to sort column ascending">کیلو</th>
 
                     <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="تن: activate to sort column ascending">تن</th>
@@ -91,8 +90,6 @@
                         <td>افغانستان</td>
                         <td>واګون 1</td>
                         <td>2025-01-01</td>
-                        <td>2025-01-15</td>
-                        <td>Khan Saib</td>
                         <td>ملاحظه شد</td>
                     </tr>
                     <tr>
@@ -106,8 +103,6 @@
                         <td>افغانستان</td>
                         <td>واګون 1</td>
                         <td>2025-01-01</td>
-                        <td>2025-01-15</td>
-                        <td>Khan Saib</td>
                         <td>ملاحظه شد</td>
                     </tr>
                     <tr>
@@ -121,8 +116,6 @@
                         <td>افغانستان</td>
                         <td>واګون 1</td>
                         <td>2025-01-01</td>
-                        <td>2025-01-15</td>
-                        <td>Khan Saib</td>
                         <td>ملاحظه شد</td>
                     </tr>
                     <tr>
@@ -137,6 +130,7 @@
                         <td></td>
                         <td></td>
                     </tr>
+
 
                 </tbody>
             </table>

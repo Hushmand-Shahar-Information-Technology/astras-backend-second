@@ -49,16 +49,13 @@
 
                     <th class="sorting" tabindex="0" aria-controls="example1" rowspan="2" colspan="1" aria-label="نوع جنس: activate to sort column ascending">نوع جنس</th>
 
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="2" colspan="1" aria-label="لنګر: activate to sort column ascending">لنګر</th>
+                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="2" colspan="2" aria-label="تعداد موتر داخلی: activate to sort column ascending">تعداد موتر داخلی</th>
 
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="2" colspan="1" aria-label="واګون: activate to sort column ascending">واګږن</th>
-
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="2" colspan="1" aria-label="کانټینر: activate to sort column ascending">کانټینر</th>
+                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="2" colspan="2" aria-label="تعداد موتر خارجی: activate to sort column ascending">تعداد موتر خارجی</th>
 
                     <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="2" aria-label="تخلیه: activate to sort column ascending">تخلیه
                     </th>
 
-                    <th class="sorting" tabindex="0" aria-controls="example1" rowspan="2" colspan="1" aria-label="عراده: activate to sort column ascending">عراده</th>
 
                     <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="2" aria-label="موقیعت واګون: activate to sort column ascending">بارکیری</th>
 

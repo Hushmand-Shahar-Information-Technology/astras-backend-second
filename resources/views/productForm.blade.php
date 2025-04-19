@@ -3,8 +3,10 @@
 
 @section('content')
 
-<div class="card-header bg-primary container-fluid d-flex justify-content-center rounded-top-2">
+<div class="card-header bg-primary container-fluid d-flex justify-content-between rounded-top-2">
+    <div class="card-title text-white" style="text-align: center">اکت نمبر ' &nbsp; &nbsp; &nbsp;'</div>
     <div class="card-title text-white" style="text-align: center">مدیریت تنظیم اسناد</div>
+    <div class="card-title text-white" style="text-align: center"></div>
 </div>
 
 <div class="card card-primary mb-4 rounded-top-0">
@@ -18,42 +20,44 @@
       <div class="card-body">
         {{-- row 1 --}}
         <div class="row g-3 mt-2">
-          <div class="col-md-4">
-            <div class="form-group">
-              <label for="product_type" class="form-label">نوع محصول</label>
-              <select class="form-select" name="product_type" id="product_type">
-                <option value="" disabled selected>انتخاب کنید</option>
-                              <option value="Product1">محصول 1</option>
-                              <option value="Product2">محصول 2</option>
-                              <option value="Product3">محصول 3</option>
-                              <option value="Product4">محصول 4</option>
-              </select>
+            <div class="col-md-4">
+                <div class="form-group">
+                  <label for="act_number" class="form-label">اکت نمبر</label>
+                  <select class="form-select" id="act_number" name="act_number">
+                        <option value="" disabled selected>انتخاب کنید</option>
+                        <option value="Product1">محصول 1</option>
+                        <option value="Product2">محصول 2</option>
+                        <option value="Product3">محصول 3</option>
+                        <option value="Product4">محصول 4</option>
+                  </select>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="form-group">
-              <label for="via" class="form-label">از طریق</label>
-              <select class="form-select" id="via" name="via">
-                <option value="" disabled selected>انتخاب کنید</option>
-                <option value="Product1">محصول 1</option>
-                <option value="Product2">محصول 2</option>
-                <option value="Product3">محصول 3</option>
-                <option value="Product4">محصول 4</option>
-              </select>
+            <div class="col-md-4">
+                <div class="form-group">
+                  <label for="via" class="form-label">از طریق</label>
+                  <select class="form-select" id="via" name="via">
+                    <option value="" disabled selected>انتخاب کنید</option>
+                    <option value="Product1">محصول 1</option>
+                    <option value="Product2">محصول 2</option>
+                    <option value="Product3">محصول 3</option>
+                    <option value="Product4">محصول 4</option>
+                  </select>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="form-group">
-              <label for="act_number" class="form-label">اکت نمبر</label>
-              <select class="form-select" id="act_number" name="act_number">
-                <option value="" disabled selected>انتخاب کنید</option>
-                              <option value="Product1">محصول 1</option>
-                              <option value="Product2">محصول 2</option>
-                              <option value="Product3">محصول 3</option>
-                              <option value="Product4">محصول 4</option>
-              </select>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="product_type" class="form-label">نوع محصول</label>
+                    <select class="form-select" name="product_type" id="product_type">
+                        <option value="" disabled selected>انتخاب کنید</option>
+                            <option value="Product1">محصول 1</option>
+                            <option value="Product2">محصول 2</option>
+                            <option value="Product3">محصول 3</option>
+                            <option value="Product4">محصول 4</option>
+                  </select>
+                </div>
             </div>
-          </div>
+
+
         </div>
         {{-- row 2 --}}
         <div class="row g-3 mt-2">
@@ -172,8 +176,8 @@
       <!--end::Body-->
       <!--begin::Footer-->
       <div class="mb-3 d-flex gap-3 flex-wrap" dir="ltr">
-        <div class="">
-          <button style="background-color:#03a5fc " class="btn text-white">بازگشت</button>
+        <div>
+            <button class="btn btn-secondary text-white fw-bold">بازګشت</button>
         </div>
         <div class="">
             <button class="btn text-white " style="background-color: #32c818">ذخیره و یکی دیگر</button>
