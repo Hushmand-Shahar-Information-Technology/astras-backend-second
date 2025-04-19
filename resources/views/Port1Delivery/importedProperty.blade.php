@@ -35,7 +35,7 @@
     <h3 class="text-center my-4"></h3>
     {{-- filter options --}}
 
-    @include('components.filterOptions');
+    @include('components.filterOptions')
 
   <!-- Responsive Table -->
     <div class="table-responsive" style="overflow-x: auto; overflow-y: auto;" >

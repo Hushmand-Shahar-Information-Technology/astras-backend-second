@@ -1,5 +1,5 @@
  <!-- Filter Buttons -->
- <div class="d-flex flex-wrap justify-content-between align-items-center" dir="ltr">
+ <div class="d-flex flex-wrap justify-content-between align-items-center mb-3" dir="ltr">
     <div class="d-flex flex-wrap gap-2">
         <button onclick="printTable()" class="print-button">
             <i class="fi fi-rr-print"></i> چاپ
