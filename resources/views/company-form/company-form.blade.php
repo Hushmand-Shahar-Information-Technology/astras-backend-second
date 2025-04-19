@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="card-header bg-primary container-fluid d-flex justify-content-center rounded-top-2">
-    <div class="card-title text-white" style="text-align: center">کتاب ثبت اموال وارداتی از طریق کشتی</div>
+    <div class="card-title text-white" style="text-align: center">شرکت</div>
 </div>
 
 <div class="card card-primary mb-4 rounded-top-0">
@@ -25,41 +25,36 @@
           </div>
           <div class="col-md-4">
             <div class="form-group">
-              <label for="date" class="form-label">تاریخ</label>
-              <input type="date" class="form-control" id="date" name="date">
+              <label for="name" class="form-label">اسم</label>
+              <input type="text" class="form-control" id="name" name="name">
             </div>
           </div>
           <div class="col-md-4">
             <div class="form-group">
-              <label for="act_number" class="form-label">نوع جنس</label>
-              <select class="form-select" id="act_number" name="act_number">
-                <option value="" disabled selected>انتخاب کنید</option>
-                <option value="Product1">محصول 1</option>
-                <option value="Product2">محصول 2</option>
-                <option value="Product3">محصول 3</option>
-                <option value="Product4">محصول 4</option>
-              </select>
+              <label for="father-name" class="form-label">ولد</label>
+              <input type="text" class="form-control" id="father-name" name="father-name">
             </div>
           </div>
+
         </div>
           {{-- row 3 --}}
         <div class="row g-3 mt-2">
           <div class="col-md-4">
             <div class="form-group">
-              <label class="form-label" for="range">محدوده</label>
-              <input type="text" class="form-control" placeholder="محدوده" id="inputGroupFile02">
+              <label class="form-label" for="range">شماره تماس نماینده</label>
+              <input type="text" class="form-control" placeholder="شماره تماس نماینده" id="inputGroupFile02">
             </div>
           </div>
           <div class="col-md-4">
             <div class="form-group">
-              <label class="form-label" for="customary">مروجه</label>
-              <input type="text" class="form-control" placeholder="مروجه" id="inputGroupF">
+              <label class="form-label" for="">اسم همکار نماینده</label>
+              <input type="text" class="form-control" placeholder="اسم همکار نماینده" id="inputGroupF">
             </div>
           </div>
           <div class="col-md-4">
             <div class="form-group">
-              <label class="form-label" for="range1">نمبر کنسمنت</label>
-              <input type="text" placeholder="نمبر کنسمنت" class="form-control" id="range1">
+              <label class="form-label" for="range1">تاریخ مکتوب</label>
+              <input type="date" class="form-control" id="range1">
             </div>
           </div>
         </div>
