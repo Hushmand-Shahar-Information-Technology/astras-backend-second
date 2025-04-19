@@ -1,4 +1,9 @@
-    // Print functionality
+function toggleVisibility() {
+    const div = document.getElementById("myDiv");
+    div.classList.toggle("hidden");
+}
+
+// Print functionality
         function printTable() {
             // Create a clean container for printing
             var printContainer = $("<div>").addClass("print-container").css({

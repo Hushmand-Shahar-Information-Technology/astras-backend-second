@@ -1,13 +1,14 @@
 @extends('layout.layout')
 
-@section('content') <style>
-    table, td {  
-    border-top: 1px solid black;
-      border-bottom: 1px solid black;
-      border-left: none !important;
-      border-right: none !important;
-      text-align: center;
-      vertical-align: middle;
+@section('content')
+<style>
+    table, td {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        border-left: none !important;
+        border-right: none !important;
+        text-align: center;
+        vertical-align: middle;
     }
 
     /* Keep right-most column text on one line */
@@ -30,8 +31,8 @@
       margin: 1rem 0;
     }
     p {
-        margin: 0 !important ; 
-        padding: 0 !important; 
+        margin: 0 !important ;
+        padding: 0 !important;
     }
   </style>
 <div class="container mt-4 ">
@@ -41,7 +42,7 @@
                 <img src="{{asset('images/gov-logo.png')}}" style="width: 80px; height: 80px;     transform: translate(-35px, -15px);" alt="">
             </div>
         </div>
-        <div class="text-center"> 
+        <div class="text-center">
             <p>وزارت مالیه </p>
             <p>ریاست عمومی شرکت های دولتی</p>
             <p>ریاست شرکت دولتی استراس</p>
@@ -69,79 +70,86 @@
         <tbody>
           <tr>
             <td style="width: 10rem">شماره</td>
-            <td></td><td></td><td></td><td></td><td></td>
+            <td style="width:100rem; text-align:right;" class="form-group">
+                <input type="text" class="form-control p-0 outline-none border-0 shadow-none" name="no" placeholder="شماره">
+            </td>
           </tr>
           <tr>
               <td>اسم شرکت</td>
-            <td></td><td></td><td></td><td></td><td></td>
+              <td style="width:100rem; text-align:right;" class="form-group">
+                    <input type="text" class="form-control p-0 outline-none border-0 shadow-none" name="name" placeholder="اسم شرکت">
+               </td>
           </tr>
           <tr>
               <td>اسم راننده</td>
-            <td></td><td></td><td></td><td></td><td></td>
+              <td style="width:100rem; text-align:right;" class="form-group">
+                    <input type="text" class="form-control p-0 outline-none border-0 shadow-none" name="driver-name" placeholder="اسم راننده">
+               </td>
           </tr>
           <tr>
               <td>نمبر موتر</td>
-            <td></td><td></td><td></td><td></td><td></td>
+              <td style="width:10rem; text-align:right;" >
+                    <input type="text" class="form-control p-0 outline-none border-0 shadow-none" name="car-no" placeholder="نمبر موتر">
+               </td>
           </tr>
           <tr>
               <td>نوع جنس</td>
-            <td></td><td></td><td></td><td></td><td></td>
+              <td style="width:100rem; text-align:right;" class="form-group">
+                    <input type="text" class="form-control p-0 outline-none border-0 shadow-none" name="type" placeholder="نوع جنس">
+               </td>
           </tr>
           <tr>
               <td>خالی</td>
-            <td></td><td></td><td></td><td></td><td></td>
+              <td style="width:100rem; text-align:right;" class="form-group">
+                    <input type="text" class="form-control p-0 outline-none border-0 shadow-none" name="empty" placeholder="خالی">
+               </td>
           </tr>
           <tr>
               <td>تاریخ و ساعت دخول</td>
-            <td></td><td></td><td></td><td></td><td></td>
+              <td style="width:100rem; text-align:right;" class="form-group">
+                    <input type="text" class="form-control p-0 outline-none border-0 shadow-none" name="entry-date" placeholder=" تاریخ و ساهت دخول">
+               </td>
           </tr>
           <tr>
               <td>تاریخ و ساعت خروج</td>
-            <td></td><td></td><td></td><td></td><td></td>
+              <td style="width:100rem; text-align:right;" class="form-group">
+                    <input type="text" class="form-control p-0 outline-none border-0 shadow-none" name="exit-date" placeholder="تاریخ و ساهت خروج">
+               </td>
           </tr>
           <tr>
               <td>مدت توقف</td>
-            <td></td><td></td><td></td><td></td><td></td>
+              <td style="width:100rem; text-align:right;" class="form-group">
+                    <input type="text" class="form-control p-0 outline-none border-0 shadow-none" name="park-time" placeholder="مدت توقف">
+               </td>
           </tr>
           <tr>
             <td>مبلغ فی عراده فی روز</td>
-            <td></td><td></td><td></td><td></td><td></td>
-          </tr>
-          <tr>
-            <td>مجموع مبلغ</td>
-            <td></td><td></td><td></td><td></td>
-            <td style="position: relative;">
-                <div style="width: 15rem; height: 10.2rem; background-color: white; padding: 1rem 2rem; position: absolute; bottom: 0; left: 0; border-top: 1px solid black !important; border-right: 1px solid black !important;">
-                    <div>
-                      <p>مبلغ: (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) افغانی</p>
-                        اخذ شد
-                    </div>
-                    <div>
-                      <p>امضاء مامور موظف:</p>
-                      <p>............</p>
-                    </div>
-                </div>
+            <td style="width:100rem; text-align:right;" class="form-group">
+                <input type="text" class="form-control p-0 outline-none border-0 shadow-none" name="cash-per-car" placeholder="مبلغ فی عراده فی روز">
             </td>
           </tr>
+            <tr>
+                <td>مجموع مبلغ</td>
+                <td style="width:100rem; text-align:right;" class="form-group">
+                    <input type="text" class="form-control p-0 outline-none border-0 shadow-none " name="total-cash" placeholder="مجموعی مبلغ">
+                </td>
+
+                <td style="position: relative;">
+                    <div style="width: 15rem; height: 11.92rem; background-color: white; padding: 2.5rem 2rem; position: absolute; bottom: 0; left: 1.021rem; border-right: 1px solid black !important; ">
+                        <div>
+                            <p>مبلغ: (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) افغانی</p>
+                            اخذ شد
+                    </div>
+                    <div>
+                        <p>امضاء مامور موظف:</p> <br>
+                        <p>............</p>
+                    </div>
+                </td>
+            </tr>
         </tbody>
       </table>
     </div>
   </div>
-{{-- 
-    <div class="signature-box border-top border-dark row mt-4">
-<div class="col-md-6">
-  <p>مبلغ: ("     ") افغانی</p>
-  <p>اخذ شد.</p>
-</div>
-<div class="col-md-6 text-end">
-  <p>امضاء مامور موظف:</p>
-  <p>............</p>
-</div> 
---}}
-
-{{--     
-    </div>
-  </div> --}}
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
