@@ -43,10 +43,19 @@
         <button onclick="printTable()" class="print-button">
             <i class="fi fi-rr-print"></i> چاپ
         </button>
-      <button class="btn btn-outline-primary filter-btn"><i class="bi bi-list-ul"></i> تمام</button>
-      <button class="btn btn-outline-danger filter-btn"><i class="bi bi-x-circle"></i> توقف شدن</button>
-      <button class="btn btn-outline-success filter-btn"><i class="bi bi-play-circle"></i> درحال تولید</button>
-      <button class="btn btn-outline-info filter-btn"><i class="bi bi-funnel"></i> Filter Records</button>
+        <button class="btn btn-outline-primary filter-btn"><i class="bi bi-list-ul"></i> تمام</button>
+        <button class="btn btn-outline-danger filter-btn"><i class="bi bi-x-circle"></i> توقف شدن</button>
+        <button class="btn btn-outline-success filter-btn"><i class="bi bi-play-circle"></i> درحال تولید</button>
+        <button class="btn btn-outline-info filter-btn position-relative" onclick="toggleVisibility()"><i class="bi bi-funnel"></i> Filter Records
+        </button>
+        <div class="hidden box" id="myDiv">
+            <select class="form-select form-select-sm  shadow" >
+                <option value="">Choose an option</option>
+                <option value="Apple 🍎">Apple</option>
+                <option value="Banana 🍌">Banana</option>
+                <option value="Cherry 🍒">Cherry</option>
+            </select>
+        </div>
     </div>
     <input type="text" class="form-control w-auto mt-2 mt-md-0" placeholder="🔍 Live Search">
   </div>
