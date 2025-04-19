@@ -1,5 +1,5 @@
 @extends('layout.layout')
-
+ 
 @section('content')
 <div class="print-header">
             <div class="" style="display:flex; flex-direction:row">

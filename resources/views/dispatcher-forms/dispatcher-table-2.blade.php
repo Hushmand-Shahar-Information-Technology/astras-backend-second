@@ -1,7 +1,7 @@
 @extends('layout.layout')
 
 @section('content')
-{{-- <div class="print-header">
+ <div class="print-header">
             <div class="" style="display:flex; flex-direction:row">
                 <div class="logo align-self-end" style="display:flex; justify-content:flex-end; align-items:flex-end;">
                     <img src="{{ asset('images/logo.png') }}" alt="Logo"
@@ -23,37 +23,22 @@
                         style="height: 80px; width: 80px;margin-top:auto">
                 </div>
             </div>
-        </div> --}}
+        </div>
 
         <div class="custom-table-container">
-            <!-- Search and Print Controls -->
-            <div class="controls-container">
-                <div class="search-box">
-                    <form class="w-full">
-                        <input type="text" class="search-input"
-                            placeholder="جستجو..." >
-                    </form>
-                </div>
-                <button onclick="printTable()" class="print-button">
-                    <i class="fi fi-rr-print"></i> چاپ
-                </button>
-            </div>
+
             <div class="table-responsive">
-                <h1 class="text-center mb-4" style=" font-weight: bold; font-size: 24px;">کتاب ثبت اموال وارداتی از طریق پل سرحدی</h1>
+                <h1 class="text-center mb-1" style=" font-weight: bold; font-size: 24px;">آمریت پورت نمبر (1) مدیریت عمومی تنظیم اسناد</h1>
+                <h1 class="text-center mb-4" style=" font-weight: bold; font-size: 24px;">کتاب ثبت اموال وارداتی ترانزایتی از طریق پل سرحدی</h1>
             </div>
 
             <div class="container bg-white p-4 rounded shadow-sm">
     <h3 class="text-center my-4"></h3>
-  {{-- <!-- Filter Buttons -->
-  <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
-    <div class="d-flex flex-wrap gap-2">
-      <button class="btn btn-outline-primary filter-btn"><i class="bi bi-list-ul"></i> تمام</button>
-      <button class="btn btn-outline-danger filter-btn"><i class="bi bi-x-circle"></i> توقف شدن</button>
-      <button class="btn btn-outline-success filter-btn"><i class="bi bi-play-circle"></i> درحال تولید</button>
-      <button class="btn btn-outline-info filter-btn"><i class="bi bi-funnel"></i> Filter Records</button>
-    </div>
-    <input type="text" class="form-control w-auto mt-2 mt-md-0" placeholder="🔍 Live Search">
-  </div> --}}
+
+ {{-- filter options --}}
+
+    @include('components.filterOptions');
+
 
   <!-- Responsive Table -->
     <div class="table-responsive" style="overflow-x: auto; overflow-y: auto;" >
