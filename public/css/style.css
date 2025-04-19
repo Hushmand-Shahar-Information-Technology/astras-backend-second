@@ -73,7 +73,7 @@
     table {
         direction: rtl;
     }
-    .tb-header{
+    #tb-header{
         background-color: black !important;
     }
 
