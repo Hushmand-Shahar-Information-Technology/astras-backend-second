@@ -2,6 +2,9 @@ function toggleVisibility() {
     const div = document.getElementById("myDiv");
     div.classList.toggle("hidden");
 }
+function resetSelect(id) {
+    document.getElementById(id).selectedIndex = 0;
+}
 
 // Print functionality
         function printTable() {
