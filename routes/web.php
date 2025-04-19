@@ -18,3 +18,4 @@ Route::view('/train-station/export/oil','exportOilTable');
 Route::view('/table4','table4');
 Route::view('/tableTask','tableTasks');
 Route::view('/trainStationDashboard','trainStationDashboard');
+Route::view('/dispatcher','dispatcher-form-1');
