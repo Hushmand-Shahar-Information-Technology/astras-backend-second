@@ -19,3 +19,4 @@ Route::view('/table4','table4');
 Route::view('/tableTask','tableTasks');
 Route::view('/trainStationDashboard','trainStationDashboard');
 Route::view('/dispatcher','dispatcher-form-1');
+Route::view('/port1/warehouse','Port1Delivery.importedProperty');

@@ -40,7 +40,7 @@
     <div class="table-responsive" style="overflow-x: auto; overflow-y: auto;" >
 
         <table class="custom-table table table-bordered table-hover text-center align-middle" id="dataTable">
-            <thead class="table-light" id="tb-header">
+            <thead class="table-light" id="tbHeader">
                 <tr>
                     <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="شماره: activate to sort column descending">شماره</th>
 
