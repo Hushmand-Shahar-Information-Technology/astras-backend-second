@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="card-header bg-primary container-fluid d-flex justify-content-center rounded-top-2">
-    <div class="card-title text-white" style="text-align: center">آمریت پورت نمبر (۱) مدیریت عمومی تنظیم اسناد</div>
+    <div class="card-title text-white" style="text-align: center">کتاب ثبت اموال وارداتی از طریق کشتی</div>
 </div>
 
 <div class="card card-primary mb-4 rounded-top-0">
@@ -65,16 +65,28 @@
         </div>
          {{-- row 4 --}}
         <div class="row g-3 mt-2">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <div class="form-group">
               <label class="form-label" for="weight">وزن</label>
               <input type="text" class="form-control" placeholder="به تن" id="weight" name="weight">
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-4">
             <div class="form-group">
               <label class="form-label" for="kg">وزن</label>
               <input type="text" placeholder="به کیلو گرام" class="form-control" id="kg" name="kg">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="product_type" class="form-label">نوع کشتی</label>
+              <select class="form-select" id="product_type" name="product_type">
+                <option value="" disabled selected>انتخاب کنید</option>
+                              <option value="Product1">محصول 1</option>
+                              <option value="Product2">محصول 2</option>
+                              <option value="Product3">محصول 3</option>
+                              <option value="Product4">محصول 4</option>
+              </select>
             </div>
           </div>
         </div>
