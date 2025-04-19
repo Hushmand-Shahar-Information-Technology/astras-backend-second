@@ -1,7 +1,7 @@
  <!-- Filter Buttons -->
  <div class="d-flex flex-wrap justify-content-between align-items-center mb-3" dir="ltr">
     <div class="d-flex flex-wrap gap-2">
-        <button onclick="printTable()" class="print-button">
+        <button onclick="printTable()" class="btn btn-sm print-button text-white">
             <i class="fi fi-rr-print"></i> چاپ
         </button>
         {{-- <button class="btn btn-outline-primary filter-btn"><i class="bi bi-list-ul"></i> تمام</button>

@@ -35,15 +35,17 @@
     <link rel="stylesheet" href="{{ asset('css/adminlte/adminlte.rtl.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/tableStyle.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <style>
       *{
-        margin: 0px; 
-        padding: 0px; 
+        margin: 0px;
+        padding: 0px;
       }
     body {
-        font-family: 'Myriad Pro', sans-serif;
+        font-family: 'Noto Naskh Arabic', serif;
     }
     </style>
 

@@ -20,6 +20,9 @@
     margin-bottom: 1.5rem;
     gap: 1rem;
 }
+.print-sizw i{
+    font-size: 1rem;
+}
 
 .search-box {
     flex: 1;
