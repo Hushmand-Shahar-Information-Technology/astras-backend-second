@@ -51,9 +51,9 @@
         <div class="hidden box" id="myDiv">
             <select class="form-select form-select-sm  shadow" >
                 <option value="">Choose an option</option>
-                <option value="Apple 🍎">Apple</option>
-                <option value="Banana 🍌">Banana</option>
-                <option value="Cherry 🍒">Cherry</option>
+                <option value="Train 🚃">Train 🚃</option>
+                <option value="Truck 🚒">Truck 🚒</option>
+                <option value="Bus 🚎">Bus 🚎</option>
             </select>
         </div>
     </div>
