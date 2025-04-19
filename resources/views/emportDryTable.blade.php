@@ -37,29 +37,8 @@
 
             <div class="container bg-white p-4 rounded shadow-sm">
     <h3 class="text-center my-4"></h3>
-  <!-- Filter Buttons -->
-  <div class="d-flex flex-wrap justify-content-between align-items-center mb-3" dir="ltr">
-    <div class="d-flex flex-wrap gap-2">
-        <button onclick="printTable()" class="print-button">
-            <i class="fi fi-rr-print"></i> چاپ
-        </button>
-        <button class="btn btn-outline-primary filter-btn"><i class="bi bi-list-ul"></i> تمام</button>
-        <button class="btn btn-outline-danger filter-btn"><i class="bi bi-x-circle"></i> توقف شدن</button>
-        <button class="btn btn-outline-success filter-btn"><i class="bi bi-play-circle"></i> درحال تولید</button>
-        <button class="btn btn-outline-info filter-btn position-relative" onclick="toggleVisibility()"><i class="bi bi-funnel"></i> Filter Records
-        </button>
-        <div class="hidden box" id="myDiv">
-            <select class="form-select form-select-sm  shadow" >
-                <option value="">Choose an option</option>
-                <option value="Train 🚃">Train 🚃</option>
-                <option value="Truck 🚒">Truck 🚒</option>
-                <option value="Bus 🚎">Bus 🚎</option>
-            </select>
-        </div>
-    </div>
-    <input type="text" class="form-control w-auto mt-2 mt-md-0" placeholder="🔍 Live Search">
-  </div>
-
+  {{-- filter options --}}
+  @include('components.filterOptions');
   <!-- Responsive Table -->
     <div class="table-responsive" style="overflow-x: auto; overflow-y: auto;" >
 
