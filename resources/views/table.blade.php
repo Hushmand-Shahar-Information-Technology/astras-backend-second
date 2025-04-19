@@ -30,17 +30,7 @@
 
         <div class="custom-table-container">
             <!-- Search and Print Controls -->
-            <div class="controls-container">
-                <div class="search-box">
-                    <form class="w-full">
-                        <input type="text" class="search-input"
-                            placeholder="جستجو..." >
-                    </form>
-                </div>
-                <button onclick="printTable()" class="print-button">
-                    <i class="fi fi-rr-print"></i> چاپ
-                </button>
-            </div>
+
             <div class="table-responsive">
                 <h1 class="text-center mb-4" style=" font-weight: bold; font-size: 24px;">فورم ثبت واګون های وارداتی مواد خشکه باب</h1>
             </div>
@@ -48,8 +38,11 @@
             <div class="container bg-white p-4 rounded shadow-sm">
     <h3 class="text-center my-4"></h3>
   <!-- Filter Buttons -->
-  <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+  <div class="d-flex flex-wrap justify-content-between align-items-center mb-3" dir="ltr">
     <div class="d-flex flex-wrap gap-2">
+        <button onclick="printTable()" class="print-button">
+            <i class="fi fi-rr-print"></i> چاپ
+        </button>
       <button class="btn btn-outline-primary filter-btn"><i class="bi bi-list-ul"></i> تمام</button>
       <button class="btn btn-outline-danger filter-btn"><i class="bi bi-x-circle"></i> توقف شدن</button>
       <button class="btn btn-outline-success filter-btn"><i class="bi bi-play-circle"></i> درحال تولید</button>
